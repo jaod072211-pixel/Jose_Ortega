@@ -5,10 +5,12 @@ int main()
 int *ptr;
 
 ptr=&arreglo[0];
+//Impresion de arreglo con punteros 
    for (int i=0; i< 5; i++)
    {
-     printf("arreglo[%d] = %d ", i, arreglo[i]); 
-       printf(" %d\n ", *ptr);
+     printf("arreglo[%d] = %d\t ", i, arreglo[i]); 
+     //ptr = &arreglo[i];
+       printf(" %d\n ", *(ptr));
    }
 
     return 0;
